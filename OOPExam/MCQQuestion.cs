@@ -9,7 +9,7 @@ namespace OOPExam
 {
     public class MCQQuestion : Question
     {
-        public MCQQuestion(string header, string body, int mark) : base(header, body, mark) { }
+        public MCQQuestion(string header, string body, int mark , int answerCount) : base(header, body, mark , answerCount) { }
 
         public override string ToString()
         {

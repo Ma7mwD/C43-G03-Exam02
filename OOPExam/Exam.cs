@@ -8,15 +8,15 @@ namespace OOPExam
 {
     public abstract class Exam
     {
-        public int Time { get; set; } // in minutes
+        public int Time { get; set; }
         public int NumberOfQuestions { get; set; }
-        public List<Question> Questions { get; set; }
+        public Question[] Questions { get; set; }
 
         protected Exam(int time, int numberOfQuestions)
         {
             Time = time;
             NumberOfQuestions = numberOfQuestions;
-            Questions = new List<Question>();
+            Questions = new Question[numberOfQuestions];
         }
 
         public abstract void ShowExam();
