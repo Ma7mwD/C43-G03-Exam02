@@ -10,7 +10,8 @@ namespace OOPExam
     {
         /*
            Abstract Class: Question
-           Attributes: Header string , Body string ,  Mark int, AnswerList List<Answer> , RightAnswerId int
+           Attributes: Header string , Body string ,  Mark int , answerCount int , 
+           Answer[] AnswerList , RightAnswerId int
            Methods: ToString() abstract
 
            Subclasses: 
@@ -22,7 +23,7 @@ namespace OOPExam
            Methods: ToString()
 
            Abstract Class: Exam
-           Attributes: Time int , NumberOfQuestions int, Questions List<Question>
+           Attributes: Time int , NumberOfQuestions int, Question[] Questions
            Methods: ShowExam() abstract
 
            Subclasses: 
@@ -33,11 +34,8 @@ namespace OOPExam
            Attributes: SubjectId int , SubjectName string , SubjectExam Exam
            Methods: CreateExam(Exam) void
 
-           Clone(): object (Implements ICloneable)
-           CompareTo(Subject): int (Implements IComparable)
-           ToString(): string
 
-                Relationships
+           Relationships
 
            Inheritance:
                 Question → TrueFalseQuestion, MCQQuestion

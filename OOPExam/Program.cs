@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             
-            Subject subject = new Subject(101, "Programming");
+            Subject subject1 = new Subject(101, "Programming");
             
             FinalExam finalExam = new FinalExam(120, 2);
             var question1 = new TrueFalseQuestion("Q1", "C# is a programming language?", 5, 2);
@@ -13,7 +13,6 @@
             question1.AnswerList[1] = new Answer(2, "False");
             question1.RightAnswerId = 1;
             finalExam.Questions[0] = question1;
-
             var question2 = new MCQQuestion("Q2", "Which one is not a programming language?", 10, 3);
             question2.AnswerList[0] = new Answer(1, "Python");
             question2.AnswerList[1] = new Answer(2, "Java");
@@ -22,15 +21,18 @@
             finalExam.Questions[1] = question2;
 
 
-            subject.CreateExam(finalExam);
+            subject1.CreateExam(finalExam);
 
             
-            Console.WriteLine(subject);
-            subject.SubjectExam.ShowExam();
+            Console.WriteLine(subject1);
+            subject1.SubjectExam.ShowExam();
 
+
+            Console.WriteLine("\n");
             
+
             /*----------------------------------------------------------------------------------*/
-            Subject subject1 = new Subject(102, "History");
+            Subject subject2 = new Subject(102, "History");
 
             PracticalExam practicalExam = new PracticalExam(60, 1);
 
@@ -42,10 +44,10 @@
             practicalQuestion.RightAnswerId = 1;
             practicalExam.Questions[0] = practicalQuestion;
 
-            subject.CreateExam(practicalExam);
+            subject2.CreateExam(practicalExam);
 
-            Console.WriteLine(subject);
-            subject.SubjectExam.ShowExam();
+            Console.WriteLine(subject2);
+            subject2.SubjectExam.ShowExam();
         }
     }
 }

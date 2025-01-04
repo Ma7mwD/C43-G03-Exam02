@@ -20,6 +20,8 @@ namespace OOPExam
                 {
                     Console.WriteLine(answer);
                 }
+                Console.WriteLine("----------------------------------------------------------------------------------");
+
             }
         }
     }

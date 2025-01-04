@@ -9,7 +9,8 @@ namespace OOPExam
 {
     public class TrueFalseQuestion : Question
     {
-        public TrueFalseQuestion(string header, string body, int mark , int answerCount) : base(header, body, mark, answerCount) { }
+        public TrueFalseQuestion(string header, string body, int mark , int answerCount) 
+            : base(header, body, mark, answerCount) { }
 
         public override string ToString()
         {
